@@ -6,4 +6,3 @@
 
 [node name="Dice" type="Node2D" parent="." unique_id=971579238]
 script = ExtResource("1_ig7tw")
-DiceSheet = "uid://chpnc0ff56qvm"
