@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://itjx7nw2nedh"]
 
-[ext_resource type="Script" uid="uid://cek1ako04trqr" path="res://dice.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://git8nt4bu8cb" path="res://scripts/dice/dice_main.gd" id="1_ig7tw"]
 
 [node name="Main" type="Node2D" unique_id=1993107666]
 

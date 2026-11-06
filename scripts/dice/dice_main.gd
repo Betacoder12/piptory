@@ -3,7 +3,6 @@ extends Node2D
 var atlas : AtlasTexture
 
 @export_file("*.png") var DiceSheet : String
-var dice_textures : Array
 
 func _ready() -> void:
 	var dice_atlas = AtlasTexture.new()
@@ -11,6 +10,8 @@ func _ready() -> void:
 	dice_image.load(DiceSheet)
 	var dice_texture = ImageTexture.create_from_image(dice_image)
 	dice_atlas.atlas = dice_texture
+	
+	var dice_textures := []
 	
 	for y in dice_image.get_height() / 16:
 		for x in dice_image.get_width() / 16:
