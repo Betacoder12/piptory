@@ -1,18 +1,15 @@
 [gd_scene format=3 uid="uid://itjx7nw2nedh"]
 
-[ext_resource type="Script" uid="uid://git8nt4bu8cb" path="res://scripts/dice/dice_main.gd" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://de7tywxiq2ul0" path="res://scripts/belt/belt_main.gd" id="2_0xm2m"]
 
-[node name="Main" type="Node2D" unique_id=1993107666]
+[sub_resource type="SpriteFrames" id="SpriteFrames_y17ji"]
 
-[node name="Dice" type="Node2D" parent="." unique_id=971579238]
-script = ExtResource("1_ig7tw")
-DiceSheet = "uid://chpnc0ff56qvm"
+[node name="Main" type="Node2D" unique_id=1993107666]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1584318258]
 zoom = Vector2(3, 3)
 
-[node name="Belt" type="Node2D" parent="." unique_id=586147205]
+[node name="Belt" type="AnimatedSprite2D" parent="." unique_id=1796006895]
+sprite_frames = SubResource("SpriteFrames_y17ji")
 script = ExtResource("2_0xm2m")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Belt" unique_id=8844855]
+belt_frames = "uid://ckkmqeyd0173"
